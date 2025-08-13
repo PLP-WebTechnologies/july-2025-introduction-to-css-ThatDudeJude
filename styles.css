@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe8cb;
+}
+
+/* Margin sizes */
+.m-top {
+  margin-top: 20px;
+}
+
+.m-right {
+  margin-right: 20px;
+}
+
+.m-left {
+  margin-left: 20px;
+}
+
+.m-bottom {
+  margin-bottom: 20px;
+}
+/* Padding sizes */
+
+.p-top {
+  padding-top: 20px;
+}
+
+.p-right {
+  padding-right: 20px;
+}
+
+.p-left {
+  padding-left: 20px;
+}
+
+.p-bottom {
+  padding-bottom: 20px;
+}
+
+/* header styles*/
+
+#header h1 {
+  font-size: 2em;
+  color: #fff;
+  background-color: hsl(33, 72%, 28%);
+}
+
+/* Navigation */
+
+#navigation {
+  font-size: 1.1em;
+}
+
+#navigation p {
+  font-size: 1.3em;
+}
+
+#navigation .nav-list {
+  list-style-type: decimal;
+}
+
+#navigation .nav-list li {
+  margin: 8px 0;
+}
+
+#navigation .nav-list li a {
+  text-decoration: none;
+  color: hsl(246, 100%, 18%);
+}
+
+#navigation .nav-list li a:hover {
+  color: hsl(52, 100%, 32%);
+}
+
+/* Main content styles */
+
+#main-content {
+  padding: 25px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: hsl(41, 100%, 14%);
+  margin-bottom: 25px;
+}
+
+/* Introduction, Box Model */
+
+#introduction p,
+#box-model > p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Box Model */
+
+.box-model-example,
+.styling-box-margin-sides,
+.styling-box-padding-sides {
+  display: flex;
+  background-color: hsl(41, 100%, 9%);
+  width: 95%;
+  margin: 25px auto;
+  height: max-content;
+  border-radius: 10px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.box-model-example div p:first-child,
+.styling-box-margin-sides div p:first-child,
+.styling-box-padding-sides div p:first-child {
+  font-size: 1.5em;
+  color: hsl(42, 100%, 4%);
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.box-model-example div,
+.styling-box-margin-sides div,
+.styling-box-padding-sides div {
+  background-color: rgb(255, 211, 158);
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 33.33%;
+}
+
+.styling-box-padding-sides div {
+  width: 25%;
+}
+
+.box-model-example .content {
+  flex: 1;
+  padding: 0px;
+  margin: 0px;
+}
+
+.box-model-example .padding {
+  padding: 30px;
+}
+
+.box-model-example .margin {
+  margin: 30px;
+}
+
+.styling-box-margin-sides .margin-top {
+  margin-top: 30px;
+}
+
+.styling-box-margin-sides .margin-right {
+  margin-right: 30px;
+}
+
+.styling-box-margin-sides .margin-left {
+  margin-left: 30px;
+}
+
+.styling-box-margin-sides .margin-bottom {
+  margin-bottom: 30px;
+}
+
+.styling-box-padding-sides {
+  padding: 10px;
+}
+
+.styling-box-padding-sides .padding-top {
+  padding-top: 30px;
+}
+
+.styling-box-padding-sides .padding-right {
+  padding-right: 30px;
+}
+
+.styling-box-padding-sides .padding-left {
+  padding-left: 30px;
+}
+
+.styling-box-padding-sides .padding-bottom {
+  padding-bottom: 30px;
+}
