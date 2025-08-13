@@ -298,6 +298,10 @@ h4 {
   width: 150px;
 }
 
+/* Texts and Fonts */
+
+/* Typefaces */
+
 .styling-typefaces {
   display: flex;
   flex-wrap: wrap;
@@ -369,4 +373,180 @@ h4 {
 
 .fantasy ul li:nth-of-type(2) {
   font-family: 'Luckiest Guy';
+}
+
+/* Styling Texts */
+
+.styling-texts {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(41, 100%, 9%);
+  /* min-width: 95%; */
+  width: 75%;
+  height: max-content;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.text-transform,
+.text-decoration,
+.text-alignment,
+.text-color,
+.text-size,
+.text-weight,
+.text-shadow,
+.vertical-text,
+.text-indentation {
+  background-color: rgb(255, 211, 158);
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid hsl(52, 100%, 32%);
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/* Transform */
+
+.text-transform .uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform .lowercase {
+  text-transform: lowercase;
+}
+
+.text-transform .capitalize {
+  text-transform: capitalize;
+}
+
+/* Decoration */
+
+.text-decoration .underline {
+  text-decoration: underline;
+}
+
+.text-decoration .line-through {
+  text-decoration: line-through;
+}
+
+.text-decoration .overline {
+  text-decoration: overline;
+}
+
+/* Alignment */
+
+.text-alignment .text-left {
+  text-align: left;
+}
+
+.text-alignment .text-center {
+  text-align: center;
+}
+
+.text-alignment .text-right {
+  text-align: right;
+}
+
+.text-alignment .text-justify {
+  text-align: justify;
+}
+
+/* Color */
+
+.text-color .text-red {
+  color: red;
+}
+
+.text-color .text-blue {
+  color: blue;
+}
+
+.text-color .text-green {
+  color: green;
+}
+
+.text-color .text-yellow {
+  color: yellow;
+}
+
+.text-color .text-purple {
+  color: purple;
+}
+
+/* Size */
+
+.text-size .text-small {
+  font-size: 0.8em;
+}
+
+.text-size .text-medium {
+  font-size: 1.2em;
+}
+
+.text-size .text-large {
+  font-size: 1.5em;
+}
+
+.text-size .text-xlarge {
+  font-size: 2em;
+}
+
+.text-size .text-xxlarge {
+  font-size: 3em;
+}
+
+.text-size .text-xxxlarge {
+  font-size: 4em;
+}
+
+/* Weight */
+
+.text-weight .text-lighter {
+  font-weight: lighter;
+}
+
+.text-weight .text-light {
+  font-weight: 300;
+}
+
+.text-weight .text-normal {
+  font-weight: 400;
+}
+
+.text-weight .text-bold {
+  font-weight: 700;
+}
+
+/* Shadow */
+
+.text-shadow .text-shadow-example {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow .text-shadow-example-2 {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Vertical Alignment */
+
+.vertical-text .vertical-text-rl {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.vertical-text .vertical-text-lr {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+/* Indentation */
+
+.text-indentation .text-indent-example {
+  text-indent: 50px;
+}
+
+.text-indentation .text-indent-example-2 {
+  text-indent: 30px;
 }
