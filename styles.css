@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +14,17 @@ body {
 }
 
 /* Margin sizes */
+
+.m-y {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.m-x {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .m-top {
   margin-top: 20px;
 }
@@ -40,6 +56,18 @@ body {
 
 .p-bottom {
   padding-bottom: 20px;
+}
+
+/* Card */
+
+.card {
+  background-color: rgb(255, 211, 158);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid hsl(52, 100%, 32%);
 }
 
 /* header styles*/
@@ -83,10 +111,24 @@ body {
   padding: 25px;
 }
 
+h2,
+h3,
+h4 {
+  color: hsl(41, 100%, 14%);
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
 h2 {
   font-size: 1.8em;
-  color: hsl(41, 100%, 14%);
-  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
 }
 
 /* Introduction, Box Model */
@@ -126,7 +168,6 @@ h2 {
 .styling-box-margin-sides div,
 .styling-box-padding-sides > div {
   background-color: rgb(255, 211, 158);
-  border: 2px solid black;
   border-radius: 10px;
   max-width: 33.33%;
   border: 3px solid hsl(52, 100%, 32%);
@@ -255,4 +296,77 @@ h2 {
   right: 0;
   top: 50%;
   width: 150px;
+}
+
+.styling-typefaces {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(41, 100%, 9%);
+  /* min-width: 95%; */
+  width: 75%;
+  height: max-content;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.styling-typefaces .card {
+  height: 200px;
+}
+
+.styling-typefaces ul {
+  list-style-type: decimal;
+}
+
+.styling-typefaces ul li {
+  margin: 10px 20px;
+}
+
+.serif ul li:nth-of-type(1) {
+  font-family: Georgia;
+}
+
+.serif ul li:nth-of-type(2) {
+  font-family: Times;
+}
+
+.serif ul li:nth-of-type(3) {
+  font-family: 'Times New Roman';
+}
+
+.sans-serif ul li:nth-of-type(1) {
+  font-family: Arial;
+}
+
+.sans-serif ul li:nth-of-type(2) {
+  font-family: Verdana;
+}
+
+.sans-serif ul li:nth-of-type(3) {
+  font-family: Helvetica;
+}
+
+.monospace ul li:nth-of-type(1) {
+  font-family: Courier;
+}
+
+.monospace ul li:nth-of-type(2) {
+  font-family: 'Courier New';
+}
+
+.cursive ul li:nth-of-type(1) {
+  font-family: 'Comic Neue';
+}
+
+.cursive ul li:nth-of-type(2) {
+  font-family: 'Petit Formal Script';
+}
+
+.fantasy ul li:nth-of-type(1) {
+  font-family: 'Freckle Face';
+}
+
+.fantasy ul li:nth-of-type(2) {
+  font-family: 'Luckiest Guy';
 }
