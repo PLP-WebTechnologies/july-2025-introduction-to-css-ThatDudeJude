@@ -105,16 +105,17 @@ h2 {
 .styling-box-padding-sides {
   display: flex;
   background-color: hsl(41, 100%, 9%);
-  width: 95%;
+  /* min-width: 95%; */
+  max-width: 950px;
   margin: 25px auto;
-  height: max-content;
+  height: min-content;
   border-radius: 10px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
 .box-model-example div p:first-child,
 .styling-box-margin-sides div p:first-child,
-.styling-box-padding-sides div p:first-child {
+.styling-box-padding-sides div div p:first-child {
   font-size: 1.5em;
   color: hsl(42, 100%, 4%);
   margin-bottom: 15px;
@@ -123,15 +124,21 @@ h2 {
 
 .box-model-example div,
 .styling-box-margin-sides div,
-.styling-box-padding-sides div {
+.styling-box-padding-sides > div {
   background-color: rgb(255, 211, 158);
   border: 2px solid black;
   border-radius: 10px;
   max-width: 33.33%;
+  border: 3px solid hsl(52, 100%, 32%);
 }
 
-.styling-box-padding-sides div {
+.styling-box-padding-sides > div {
   width: 25%;
+}
+
+.styling-box-padding-sides div div {
+  border: 1px solid black;
+  height: max-content;
 }
 
 .box-model-example .content {
@@ -169,17 +176,83 @@ h2 {
 }
 
 .styling-box-padding-sides .padding-top {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .styling-box-padding-sides .padding-right {
-  padding-right: 30px;
+  padding-right: 35px;
 }
 
 .styling-box-padding-sides .padding-left {
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .styling-box-padding-sides .padding-bottom {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+}
+
+/* Positioning */
+
+.styling-positions {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(41, 100%, 9%);
+  /* min-width: 95%; */
+  width: 70%;
+  height: max-content;
+  margin: 25px auto;
+  border-radius: 10px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.styling-positions .positions {
+  position: relative;
+  background-color: rgb(255, 211, 158);
+  padding: 10px;
+  margin: 15px;
+  width: 400px;
+  height: 300px;
+  border: 5px solid hsl(52, 100%, 32%);
+}
+
+.styling-positions .positions p {
+  margin: 5px;
+  padding: 10px;
+}
+
+.static-position,
+.relative-position,
+.absolute-position,
+.float-position,
+.fixed-position {
+  background-color: rgb(173, 173, 173);
+}
+
+.static-position {
+  position: initial; /* static */
+}
+
+.relative-position {
+  position: relative;
+  right: -30%;
+  top: 0%;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.float-position {
+  position: float;
+  float: right;
+  width: 100px;
+}
+
+.fixed-position {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 150px;
 }

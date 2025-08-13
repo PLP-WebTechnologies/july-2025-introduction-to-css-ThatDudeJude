@@ -8,19 +8,19 @@
     <meta name="author" content="ThatDudeJude">
     <link rel="stylesheet" href="styles.css">
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-    <title>Styling Demos with CSS</title>
+    <title>Key Styling with CSS</title>
 </head>
 <body>
     <header id="header">
-        <h1  class="p-top p-bottom p-left p-right">Styling Demos with CSS</h1>
+        <h1  class="p-top p-bottom p-left p-right">Key Styling Demos with CSS</h1>
         <nav id="navigation" class="p-top p-bottom p-left p-right">
             <p class="p-bottom">Contents</p>
             <ul class="nav-list p-left">
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#box-model">Box Model</a></li>                
                 <li><a href="#positioning">Positioning</a></li>
-                <li><a href="#text-and-fonts">Texts and Fonts</a></li>                
                 <li><a href="#backgrounds">Backgrounds</a></li>                
+                <li><a href="#text-and-fonts">Texts and Fonts</a></li>                                
             </ul>
         </nav>        
     </header>
@@ -50,7 +50,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur illum consequatur accusantium vero explicabo repellat quis quas, ab ut sit!</p>
                 </div>
             </div>
-            <h3>Styling the sides of the box model</h3>
+            <h3>Styling the parts of the box model</h3>
             <p>For both padding and margin, one can style top, bottom, left, or right padding or margin, or a different combo of all 4 sides.</p>
             <div class="styling-box-margin-sides">
                 <div class="margin-top">
@@ -72,20 +72,28 @@
             </div>
             <div class="styling-box-padding-sides">
                 <div class="padding-top">
-                    <p>Box with top padding.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nemo eligendi, dolores nisi facilis esse officia ut molestiae quaerat natus ea quo aspernatur eius nobis?</p>
+                    <div>
+                        <p>Box with top padding.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis maiores, tenetur eum error exercitationem voluptates ipsum. Unde blanditiis, facilis cum iure quas rerum cupiditate molestiae doloremque voluptatem veniam corporis? Eum veritatis nobis blanditiis.</p>
+                    </div>                    
                 </div>
                 <div class="padding-right">
-                    <p>Box with right padding.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nemo eligendi, dolores nisi facilis esse officia ut molestiae quaerat natus ea quo aspernatur eius nobis?</p>
+                    <div>
+                        <p>Box with right padding.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis, provident molestiae accusamus quod eligendi ad reiciendis aliquam? Officiis minus a aut amet nulla quas provident porro totam molestiae in.</p>
+                    </div>                    
                 </div>
                 <div class="padding-bottom">
-                    <p>Box with bottom padding.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nemo eligendi, dolores nisi facilis esse officia ut molestiae quaerat natus ea quo aspernatur eius nobis?</p>
+                    <div>
+                        <p>Box with bottom padding.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore possimus excepturi iusto porro molestiae, dolore laudantium vel eius officia aperiam repellat quod consequatur illo, ratione nobis veritatis, quidem maiores! Debitis id corporis amet.</p>
+                    </div>                    
                 </div>
                 <div class="padding-left">
-                    <p>Box with left padding.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nemo eligendi, dolores nisi facilis esse officia ut molestiae quaerat natus ea quo aspernatur eius nobis?</p>
+                    <div>
+                        <p>Box with left padding.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum a nisi excepturi temporibus repellendus, ratione quod quidem? Possimus, minima totam inventore excepturi suscipit placeat amet sit optio, quas accusamus, tempora nostrum.</p>
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -93,6 +101,41 @@
             <h2>Positioning Elements</h2>
             <p>CSS allows you to control the position of elements on a web page. There are several positioning methods, including static, relative, absolute, fixed, and sticky.</p>
             <p>Here is an example of how different positioning methods can be applied to elements:</p>
+
+            <div class="styling-positions">
+                <div class="positions">
+                    <p class="static-position">
+                        This is statically positioned, the default normal flow positioning for this block element.
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                </div>                
+                <div class="positions">
+                    <p class="relative-position">
+                        This is relatively positioned, relative to it's position in the original normal flow.
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                    
+                </div>                
+                <div class="positions">
+                    <p class="absolute-position">
+                        This is absolutely positioned, relative to this box.
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                </div>
+                <div class="positions">
+                    <p class="float-position">
+                        This is positioned as float. Content in this box wraps around it.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis. Repellendus dolorem illo itaque repellat vero nihil error ad repudiandae, animi qui aspernatur facilis ratione placeat quo quae aliquid fugiat necessitatibus at autem perferendis tempore dolor pariatur! Iste, facere dignissimos.</p>
+                </div>                
+                <div class="positions">
+                    <p class="fixed-position">
+                        This element is positioned fixedly, always relative to the viewport.
+                        <a href="#positioning">Show positioning section</a>
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                </div>                
+            </div>                                        
         </section>
     </main>
 </body>
