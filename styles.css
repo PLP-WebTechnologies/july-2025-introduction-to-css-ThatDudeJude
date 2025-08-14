@@ -96,12 +96,14 @@ body {
   margin: 8px 0;
 }
 
-#navigation .nav-list li a {
+#navigation .nav-list li a,
+#header p a {
   text-decoration: none;
   color: hsl(246, 100%, 18%);
 }
 
-#navigation .nav-list li a:hover {
+#navigation .nav-list li a:hover,
+#header p a:hover {
   color: hsl(52, 100%, 32%);
 }
 
@@ -236,6 +238,7 @@ h4 {
 .styling-positions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   background-color: hsl(331.3, 100%, 9%);
   width: 70%;
   height: max-content;
@@ -553,6 +556,7 @@ h4 {
 .background-styling {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: rgb(255, 211, 158);
   width: 75%;
   height: max-content;
@@ -636,6 +640,7 @@ h4 {
 .boxes-and-borders {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: rgb(255, 211, 158);
   width: 75%;
   height: max-content;
