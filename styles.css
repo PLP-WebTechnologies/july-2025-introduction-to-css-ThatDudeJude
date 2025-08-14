@@ -146,7 +146,7 @@ h4 {
 .styling-box-margin-sides,
 .styling-box-padding-sides {
   display: flex;
-  background-color: hsl(41, 100%, 9%);
+  background-color: hsl(331.3, 100%, 9%);
   max-width: 950px;
   margin: 25px auto;
   height: min-content;
@@ -236,7 +236,7 @@ h4 {
 .styling-positions {
   display: flex;
   flex-wrap: wrap;
-  background-color: hsl(41, 100%, 9%);
+  background-color: hsl(331.3, 100%, 9%);
   width: 70%;
   height: max-content;
   margin: 25px auto;
@@ -304,7 +304,7 @@ h4 {
 .styling-typefaces {
   display: flex;
   flex-wrap: wrap;
-  background-color: hsl(41, 100%, 9%);
+  background-color: hsl(331.3, 100%, 9%);
   width: 75%;
   height: max-content;
   margin: 25px auto;
@@ -378,7 +378,7 @@ h4 {
 .styling-texts {
   display: flex;
   flex-direction: column;
-  background-color: hsl(41, 100%, 9%);
+  background-color: hsl(331.3, 100%, 9%);
   width: 75%;
   height: max-content;
   margin: 25px auto;
@@ -718,7 +718,7 @@ h4 {
 .buttons-and-links {
   display: flex;
   flex-wrap: wrap;
-  background-color: hsl(41, 100%, 9%);
+  background-color: hsl(331.3, 100%, 9%);
   width: 90%;
   height: max-content;
   margin: 25px auto;
@@ -770,14 +770,12 @@ h4 {
 }
 
 .image-btn {
-  background: rgba(255, 255, 255, 0.3)
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
 }
 
 .image-btn:hover,
 .image-btn:focus {
-  background: rgba(255, 255, 255, 0.7)
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
   border: 4px solid #ffe8cb;
 }
 
