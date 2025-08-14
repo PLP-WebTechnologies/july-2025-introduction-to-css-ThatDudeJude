@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An introduction to CSS for web styling.">
-    <meta name="keywords" content="CSS, web development, styling, ThatDudeJude">
+    <meta name="description" content="An introduction to basic CSS styling for web apps.">
+    <meta name="keywords" content="CSS, styling, box model, position, text, fonts, background, border, button, link">
     <meta name="author" content="ThatDudeJude">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-    <title>Key Styling with CSS</title>
+    
+    <title>Introduction to CSS - ThatDudeJude</title>
 </head>
 <body>
     <header id="header">
-        <h1  class="p-top p-bottom p-left p-right">Key Styling Demos with CSS</h1>
+        <h1  class="p-top p-bottom p-left p-right">Basic Styling with CSS</h1>
         <nav id="navigation" class="p-top p-bottom p-left p-right">
             <p class="p-bottom">Contents</p>
             <ul class="nav-list p-left">
@@ -22,16 +22,21 @@
                 <li><a href="#text-and-fonts">Texts and Fonts</a></li>                                
                 <li><a href="#backgrounds">Background Styling</a></li>                                
                 <li><a href="#boxes-and-borders">Boxes and Borders</a></li>
+                <li><a href="buttons-and-links">Buttons and Links</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
             </ul>
         </nav>        
     </header>
     <main id="main-content">
+        <!-- Introduction -->
         <section id="introduction">
             <h2>Introduction</h2>
             <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
             <p>This webpage is a demonstration of the different basic styles that can be applied to HTML through CSS, separating content from design, making it easier to maintain and update a website like this one.</p>    
             <p>The CSS file used to style the example are included in the <code>`&lt;link&gt;`</code> tag within the <code>`&lt;head&gt;&lt;&Backslash;head&gt;`</code> of this HTML file. </p>            
         </section>
+
+        <!-- Box Model -->
         <section id="box-model">
             <h2>The Box Model</h2>  
             <p>Each inline and block element is implemented using a box model consisting of a content area, padding and margin.</p>
@@ -62,14 +67,14 @@
                     <p>Box with bottom margin.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus odit magnam assumenda velit nemo quasi, laudantium eligendi explicabo aspernatur.</p>
                 </div>
-                <div class="margin-right">
-                    <p>Box with right margin.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus odit magnam assumenda velit nemo quasi, laudantium eligendi explicabo aspernatur.</p>
-                </div>                
                 <div class="margin-left">
                     <p>Box with left margin.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus odit magnam assumenda velit nemo quasi, laudantium eligendi explicabo aspernatur.</p>
                 </div>
+                <div class="margin-right">
+                    <p>Box with right margin.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus odit magnam assumenda velit nemo quasi, laudantium eligendi explicabo aspernatur.</p>
+                </div>                                
             </div>
             <div class="styling-box-padding-sides">
                 <div class="padding-top">
@@ -98,6 +103,7 @@
                 </div>
             </div>
         </section>
+        <!-- Positioning Elements -->
         <section id="positioning">
             <h2>Positioning Elements</h2>
             <p>CSS allows you to control the position of elements on a web page. There are several positioning methods, including static, relative, absolute, fixed, and sticky.</p>
@@ -105,39 +111,45 @@
 
             <div class="styling-positions">
                 <div class="positions">
+                    <h3>Position: Static</h3>
                     <p class="static-position">
                         This is statically positioned, the default normal flow positioning for this block element.
                     </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in sunt quod? At id voluptates incidunt voluptate explicabo eius suscipit ad officia impedit. Reiciendis sequi assumenda totam eius ipsa doloremque!</p>
                 </div>                
                 <div class="positions">
+                    <h3>Position: Relative</h3>
                     <p class="relative-position">
                         This is relatively positioned, relative to it's position in the original normal flow.
                     </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in sunt quod? At id voluptates incidunt voluptate explicabo eius suscipit ad officia impedit. Reiciendis sequi assumenda totam eius ipsa doloremque!</p>
                     
                 </div>                
                 <div class="positions">
+                    <h3>Position: Absolute</h3>
                     <p class="absolute-position">
                         This is absolutely positioned, relative to this box.
                     </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in sunt quod? At id voluptates incidunt voluptate explicabo eius suscipit ad officia impedit. Reiciendis sequi assumenda totam eius ipsa doloremque!</p>
                 </div>
                 <div class="positions">
+                    <h3>Position: Float</h3>
                     <p class="float-position">
                         This is positioned as float. Content in this box wraps around it.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis. Repellendus dolorem illo itaque repellat vero nihil error ad repudiandae, animi qui aspernatur facilis ratione placeat quo quae aliquid fugiat necessitatibus at autem perferendis tempore dolor pariatur! Iste, facere dignissimos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in sunt quod? At id voluptates incidunt voluptate explicabo eius suscipit ad officia impedit. Reiciendis sequi assumenda totam eius ipsa doloremque!</p>
                 </div>                
-                <div class="positions">
+                <div id="position-fixed" class="positions">
+                    <h3>Position: Fixed</h3>
                     <p class="fixed-position">
-                        This element is positioned fixedly, always relative to the viewport.
-                        <a href="#positioning">Show positioning section</a>
+                        This element is positioned fixedly, always relative to the viewport despite being added to the
+                        <a href="#position-fixed">Position: Fixed section</a> in html.
                     </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis veniam neque repudiandae dolorem alias, qui quia animi assumenda. Iure repellendus aperiam quidem, sit quas veritatis asperiores repudiandae dolorem, consequuntur nisi nostrum assumenda veniam fugit nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in sunt quod? At id voluptates incidunt voluptate explicabo eius suscipit ad officia impedit. Reiciendis sequi assumenda totam eius ipsa doloremque!</p>
                 </div>                
             </div>                                        
         </section>
+        <!-- Texts and Fonts -->
         <section id="texts-and-fonts">
             <h2>Texts and Fonts</h2>
             <p>CSS allows you to style how text in web apps appear and also use different typefaces.</p>                        
@@ -245,7 +257,7 @@
             </div>
         </section>
 
-        
+        <!-- Background Styling -->
         <section id="background">
             <h2>Background Styling</h2>
             <p>CSS allows you to style the background of elements, including setting background colors, images, and gradients.</p>
@@ -291,6 +303,101 @@
                     </div>                    
                 </div>
         </section>
+
+        <!-- Boxes and Borders -->
+        <section id="boxes-and-borders">
+            <h2>Boxes and Borders</h2>
+            <p>CSS allows you to style boxes and borders, including setting border styles, widths, and colors.</p>
+            <div class="boxes-and-borders">                
+                <div class="border-styles">
+                    <h4>Border Styles</h4>
+                    <div>
+                        <div class="border-solid card">
+                            <p>This box has a solid border.</p>
+                        </div>
+                        <div class="border-dashed card">
+                            <p>This box has a dashed border.</p>
+                        </div>
+                        <div class="border-dotted card">
+                            <p>This box has a dotted border.</p>
+                        </div>
+                        <div class="border-double card">
+                            <p>This box has a double border.</p>
+                        </div>
+                        <div class="border-groove card">
+                            <p>This box has a groove border.</p>
+                        </div>
+                        </div>                    
+                </div>
+                <div class="border-widths">
+                    <h4>Border Widths</h4>
+                    <div>
+                        <div class="border-thin card">
+                            <p>This box has a thin border.</p>
+                        </div>
+                        <div class="border-medium card">
+                            <p>This box has a medium border.</p>
+                        </div>
+                        <div class="border-thick card">
+                            <p>This box has a thick border.</p>
+                        </div>                        
+                    </div>                    
+                </div>
+                <div class="border-colors">
+                    <h4>Border Colors</h4>
+                    <div>
+                        <div class="border-red card">
+                            <p>This box has a red border.</p>   
+                        </div>
+                        <div class="border-green card">
+                            <p>This box has a green border.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="box-shadow">
+                    <h4>Box Shadow</h4>
+                    <div>
+                        <div class="box-shadow-example card">
+                            <p>This box has a shadow effect.</p>    
+                        </div>
+                        <div class="box-shadow-example-2 card">
+                            <p>This box has a different shadow effect.</p>      
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons and Links -->
+        <section id="buttons-and-links">
+            <h2>Buttons and Links</h2>
+            <p>CSS allows you to style buttons and links, including setting colors, hover effects, and active states.</p>
+            <div class="buttons-and-links">
+                <div class="button-styles">
+                    <h4>Button Styles</h4>
+                    <button class="btn light-btn">Light Button</button>
+                    <button class="btn dark-btn">Dark Button</button>                    
+                    <button class="btn image-btn">Image Button</button>
+                    <button class="btn outline-btn">Outline Button</button>
+                </div>
+                <div class="link-styles">
+                    <h4>Link Styles</h4>
+                    <a href="#" class="link styled-link">Link</a>
+                    <a href="#" class="link btn dark-btn">Button Style Link</a>                    
+                </div>                
+            </div>        
+            
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>CSS is a powerful tool for styling web pages, allowing you to control the layout, colors, fonts, and overall appearance of your content. By using CSS, you can create visually appealing and user-friendly web applications.</p>            
+            <p>Thank you for exploring this CSS introduction with me!</p>
+        </section>
     </main>
+    <footer id="footer">
+        <p>&copy; 2025 ThatDudeJude. All rights reserved.</p>        
+    </footer>
 </body>
 </html>

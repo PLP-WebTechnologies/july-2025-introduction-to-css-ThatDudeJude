@@ -63,7 +63,7 @@ body {
 .card {
   background-color: rgb(255, 211, 158);
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px;
   width: 300px;
   height: 300px;
@@ -131,7 +131,7 @@ h4 {
   font-size: 1.25em;
 }
 
-/* Introduction, Box Model */
+/* Introduction */
 
 #introduction p,
 #box-model > p {
@@ -147,11 +147,10 @@ h4 {
 .styling-box-padding-sides {
   display: flex;
   background-color: hsl(41, 100%, 9%);
-  /* min-width: 95%; */
   max-width: 950px;
   margin: 25px auto;
   height: min-content;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
@@ -168,7 +167,7 @@ h4 {
 .styling-box-margin-sides div,
 .styling-box-padding-sides > div {
   background-color: rgb(255, 211, 158);
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 33.33%;
   border: 3px solid hsl(52, 100%, 32%);
 }
@@ -238,11 +237,10 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   background-color: hsl(41, 100%, 9%);
-  /* min-width: 95%; */
   width: 70%;
   height: max-content;
   margin: 25px auto;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
@@ -252,8 +250,9 @@ h4 {
   padding: 10px;
   margin: 15px;
   width: 400px;
-  height: 300px;
+  height: 330px;
   border: 5px solid hsl(52, 100%, 32%);
+  border-radius: 15px;
 }
 
 .styling-positions .positions p {
@@ -306,12 +305,11 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   background-color: hsl(41, 100%, 9%);
-  /* min-width: 95%; */
   width: 75%;
   height: max-content;
   margin: 25px auto;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
@@ -381,12 +379,11 @@ h4 {
   display: flex;
   flex-direction: column;
   background-color: hsl(41, 100%, 9%);
-  /* min-width: 95%; */
   width: 75%;
   height: max-content;
   margin: 25px auto;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
@@ -403,7 +400,7 @@ h4 {
   padding: 10px;
   margin: 10px;
   border: 3px solid hsl(52, 100%, 32%);
-  border-radius: 10px;
+  border-radius: 15px;
   line-height: 1.6;
 }
 
@@ -557,12 +554,11 @@ h4 {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 211, 158);
-  /* min-width: 95%; */
   width: 75%;
   height: max-content;
   margin: 25px auto;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 10px solid hsl(30.9, 98.3%, 46.9%);
 }
 
@@ -633,4 +629,192 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
+}
+
+/* Boxes and Borders */
+
+.boxes-and-borders {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 211, 158);
+  width: 75%;
+  height: max-content;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.border-styles > div,
+.border-widths > div,
+.border-colors > div,
+.box-shadow > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: max-content;
+  padding: 10px;
+  margin: 10px;
+}
+.border-styles .card,
+.border-widths .card,
+.border-colors .card,
+.box-shadow .card {
+  margin: 10px;
+  padding: 10px;
+  background-color: hsl(52, 100%, 32%);
+}
+
+.border-styles .border-solid {
+  border: 5px solid hsl(41, 100%, 9%);
+}
+
+.border-styles .border-dashed {
+  border: 5px dashed hsl(41, 100%, 9%);
+}
+
+.border-styles .border-dotted {
+  border: 5px dotted hsl(41, 100%, 9%);
+}
+
+.border-styles .border-double {
+  border: 5px double hsl(41, 100%, 9%);
+}
+
+.border-styles .border-groove {
+  border: 5px groove hsl(41, 100%, 9%);
+}
+
+.border-widths .border-thin {
+  border: 2px solid hsl(41, 100%, 9%);
+}
+
+.border-widths .border-medium {
+  border: 5px solid hsl(41, 100%, 9%);
+}
+
+.border-widths .border-thick {
+  border: 10px solid hsl(41, 100%, 9%);
+}
+
+.border-colors .border-red {
+  border: 5px solid red;
+}
+
+.border-colors .border-green {
+  border: 5px solid green;
+}
+
+.box-shadow .box-shadow-example {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-shadow .box-shadow-example-2 {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Links and Buttons */
+
+.buttons-and-links {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(41, 100%, 9%);
+  width: 90%;
+  height: max-content;
+  margin: 25px auto;
+  border-radius: 15px;
+  border: 10px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.button-styles,
+.link-styles {
+  background-color: rgb(255, 211, 158);
+  padding: 10px;
+  margin: 10px auto;
+  width: 90%;
+  border: 3px solid hsl(52, 100%, 32%);
+  border-radius: 15px;
+  line-height: 1.6;
+}
+
+.btn {
+  width: max-content;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.light-btn {
+  background-color: hsl(52, 100%, 32%);
+}
+
+.light-btn:hover,
+.light-btn:focus {
+  background-color: hsl(30.9, 98.3%, 46.9%);
+  border: 4px solid hsl(52, 100%, 32%);
+}
+
+.dark-btn {
+  background-color: hsl(41, 100%, 9%);
+  color: #ffe8cb;
+}
+
+.dark-btn:hover,
+.dark-btn:focus {
+  background-color: hsl(52, 100%, 32%);
+  color: hsl(42, 100%, 4%);
+  border: 4px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.image-btn {
+  background: rgba(255, 255, 255, 0.3)
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
+}
+
+.image-btn:hover,
+.image-btn:focus {
+  background: rgba(255, 255, 255, 0.7)
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80');
+  border: 4px solid #ffe8cb;
+}
+
+.outline-btn {
+  background: transparent;
+  border: 4px solid hsl(41, 100%, 9%);
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  background-color: hsl(41, 100%, 14%);
+  color: #ffe8cb;
+  border: 4px solid hsl(30.9, 98.3%, 46.9%);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.styled-link {
+  text-decoration: none;
+  color: hsl(246, 39%, 22%);
+  font-size: x-large;
+}
+
+.styled-link:hover {
+  color: hsl(32, 100%, 32%);
+}
+
+/* Footer */
+
+#footer {
+  text-align: center;
+  place-content: center;
+  width: 100vw;
+  height: 100px;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: hsl(33, 72%, 28%);
 }
